@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+img{
+    display:block;
+    max-width: 100%;
+}
+
+
+.header{
+    position: absolute;
+    z-index: 400;
+    width: 300%;
+    display: flex;
+    justify-content: space-between ;
+    max-width: 1230px;
+    min-width: none;
+    top: 28px;
+    left: 300px;
+    
+}
+
+.container{
+    max-width: 1130px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.header a{
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    align-items: flex-end;
+    padding: 13px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    position: right;
+    font: bold;
+    
+}
+.main {
+    height: 785px;
+    background: url("../img/BR-pt-20220815-popsignuptwoweeks-perspective_alpha_website_large.jpg") center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.main-child{
+z-index: 1;
+display: grid;
+justify-items: center;
+
+}
+
+.main h1 {
+    font-size:64px;
+    max-width: 510px;
+    text-align: center;
+}
+
+.main span{
+    font-size: 26px;
+}
+
+.form-cta{
+    display: grid;
+    grid-template-columns: 500px 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form-cta input{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.main p{
+    font-size: 19px;
+}
+
+.form-cta button{
+    background: #e50914;
+    font-family: sans-serif;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.form-cta button::after{
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url("../img/seta.svg");
+    margin-left: 20px;
+    
+}
+
+.form-cta button:hover {
+    background: #f40612;
+}
+
+.gradient{
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.section{
+    background: black;
+    padding: 4rem 0;
+    border-top: 5px solid #222;
+}
+
+.section h1{
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.section p{
+    font: 26px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.img-tv{
+position: relative;
+left: 100px, relative;
+top: -45px, relative;
+}
+
+.img-tv img{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.slide-tv{
+    position: absolute;
+    width: 400px;
+    top: 91px;
+    left: 85px;
+}
+.video-tv {
+    position: absolute;
+    width: 350px;
+    top: 45px;
+    left: 109px;
+}
+
+.device-pile .video-tv {
+    width: 340px;
+    top: 45px;
+    left: 100px;
+  }
+
+.download .grid > div:first-child{
+    order: 2;
+}
+
+.download .img-tv {
+    order: 1;
+}
+
+.stranger {
+    align-items: relative;
+    background: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 0.75em;
+    bottom: 8%;
+    box-shadow: 0 0 2em 0 #000;
+    display: flex;
+    left: 50%;
+    margin: 3 auto;
+    min-width: 20em;
+    min-height: 5em;
+    padding: 0.25em 0.65em;
+    position: relative;
+    transform: translateX(-50%);
+    width: 60%;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 20% no-repeat;
+    background-image: url("../img/StrangerThings.png") 4em, 1px;
+    background-size: 20%;
+    background-position: right 25%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+}
+
+
+.texto-1{
+   color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.texto-2{
+    color: #0071eb;
+    font-size: 0.90rem;
+    font-weight: 400;
+}
+
+
+.criança .grid > div:first-child{
+    order: 2;
+}
+
+
+@media screen and (max-width:1920px ) and (min-width:320px ) {
+    body, aside, .img-tv {
+        width: 100%;
+        padding: 0%;
+    }
+}
+
+.strangerdown{
+    width: 50px;
+    position: absolute;
+}
+
+.texto-down{
+    padding: 5%;
+    margin-left: 15%;
+}
+
+.criança{
+    position: auto;
+}
+
+.aproveite{
+    position: auto;
+}
